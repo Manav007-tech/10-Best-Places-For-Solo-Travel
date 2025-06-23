@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+</head>
+
+<body>
+    <h1>
+        <center>
+                Form Demo
+        </center>
+    </h1>
+
+
+    <form action="signup" method="post">
+        <table align="center"   width="400"  cellspacing="15">
+
+            <tr>
+                <td>FirstName:</td>
+                <td> <input type="text" name="firstName"></td>
+            </tr>
+
+            <tr>
+                <td>Email:</td>
+                <td> 
+                    <input type="email" name="email">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" name="password"></td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    Male<input type="radio" name="gender" value="male"/>
+                    Female<input type="radio" name="gender" value="female"/>
+                    
+                </td>
+            </tr>
+
+            <tr>
+                <Td>Address:</Td>
+                <td>
+                        <textarea rows="5" name="address"></textarea>
+                </td>
+
+            </tr>
+            <tr>
+                <Td>City:</Td>
+                <td>
+                        <select name="city">
+                            <option value="-1">-----Select City-----</option>
+                            <option value="Ahmedabad">Ahmedabad</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Uttar Pradesh">Uttar Pradesh</option>
+
+
+                        </select> 
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>Hobbies:</td>
+            <td>
+
+                Cricket<input type="checkbox" name="hobby" value="cricket"/><br>
+                VolleyBall<input type="checkbox" name="hobby" value="volleyball"/><br>
+                Swimming<input type="checkbox" name="hobby" value="swimming"/><br>
+                FootBall<input type="checkbox" name="hobby" value="football"/><br>
+            
+            </td>
+
+
+            </tr>
+
+            <tr>
+                <td>ProfilePic : </td>
+                <td><input type="file" name="ProfilePic" accept=".png" multiple/></td>
+
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Signup"/>
+                    <input type="button" value="Back"/>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
